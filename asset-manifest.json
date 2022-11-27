@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/payin/static/css/main.99d304d5.css",
+    "main.css": "/payin/static/css/main.2af5ddb4.css",
     "main.js": "/payin/static/js/main.20c4fbbe.js",
     "index.html": "/payin/index.html",
-    "main.99d304d5.css.map": "/payin/static/css/main.99d304d5.css.map",
+    "main.2af5ddb4.css.map": "/payin/static/css/main.2af5ddb4.css.map",
     "main.20c4fbbe.js.map": "/payin/static/js/main.20c4fbbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.99d304d5.css",
+    "static/css/main.2af5ddb4.css",
     "static/js/main.20c4fbbe.js"
   ]
 }
