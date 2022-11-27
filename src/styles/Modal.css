@@ -1,0 +1,36 @@
+.modal {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000a8;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .closeModal {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.modal form {
+    border: 1px solid white;
+    width: 100%;
+    padding: 10px;
+}
+
+.modal form input, .modal form textarea {
+    width: 100%;
+}
+
+.modal form button {
+    width: 100%;
+    background-color: aqua;
+    padding: 6px 0;
+    margin: 6px 0;
+}

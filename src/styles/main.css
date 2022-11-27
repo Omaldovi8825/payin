@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+input, label {
+    display: block;
+}

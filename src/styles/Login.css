@@ -1,0 +1,14 @@
+.loginForm {
+    padding: 10px;
+    border: 1px solid green;
+}
+
+.loginForm button {
+    display: block;
+    margin: auto;
+}
+
+.loginError {
+    color: red;
+    text-align: center;
+}

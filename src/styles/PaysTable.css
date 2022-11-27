@@ -1,0 +1,16 @@
+.paysTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.paysTable th:nth-child(1)  {
+    width: 25%;
+}
+
+.paysTable th:nth-child(2)  {
+    width: 55%;
+}
+
+.paysTable td, .paysTable th {
+    border: 1px solid black;
+}
