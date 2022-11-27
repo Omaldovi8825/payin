@@ -3,6 +3,10 @@
     border: 1px solid green;
 }
 
+.loginForm form input {
+    width: 100%;
+}
+
 .loginForm button {
     display: block;
     margin: auto;
