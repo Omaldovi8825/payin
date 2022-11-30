@@ -19,6 +19,8 @@
 }
 
 .modal form {
+    max-width: 600px;
+    margin: auto;
     border: 1px solid white;
     width: 100%;
     padding: 10px;
@@ -26,6 +28,11 @@
 
 .modal form input, .modal form textarea {
     width: 100%;
+    margin-bottom: 10px;
+}
+
+.modal form label {
+    margin-bottom: 10px;
 }
 
 .modal form button {

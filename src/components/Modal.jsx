@@ -7,13 +7,37 @@ const formNewPayInitialState = {
     qty: 0
 }
 
+const formErrorsInitialState = {
+    concept: false,
+    qty: false
+}
+
 const Modal = ({setShowModal, addPay}) => {
 
     const [form, setForm] = useState(formNewPayInitialState)
+    const [errors, setErrors] = useState(formErrorsInitialState)
+    const { concept, qty } = form
+
+    const validateFormData = () => {
+
+        const acceptedContentLength = concept.length <= 2
+        const acceptedQty = qty <= 0
+
+        setErrors({
+            concept: acceptedContentLength,
+            qty: acceptedQty
+        })
+
+        return !(acceptedContentLength || acceptedQty)
+    }
 
     const onAddPay = (e) => {
         e.preventDefault()
-        const { concept, qty } = form
+
+        const validData = validateFormData()
+
+        if(!validData) return
+
         addPay( concept, Number(qty))
         setShowModal(false)
     }
@@ -33,6 +57,7 @@ const Modal = ({setShowModal, addPay}) => {
             <form onSubmit={onAddPay}>
                 <label>Concepto</label>
                 <textarea
+                    style={{border: `2px solid ${errors.concept ? 'red' : 'black'}`}}
                     value={form.concept}
                     onChange={handleChange}
                     name="concept"
@@ -40,6 +65,7 @@ const Modal = ({setShowModal, addPay}) => {
                 </textarea>
                 <label>Cantidad</label>
                 <input 
+                    style={{border: `2px solid ${errors.qty ? 'red' : 'black'}`}}
                     type="number"
                     name="qty"
                     onChange={handleChange}
